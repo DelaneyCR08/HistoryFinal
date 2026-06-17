@@ -1,0 +1,122 @@
+/*----------Fonts----------*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+/*----------Set Up----------*/
+body{
+    background-color: #fafafa;
+    color: black;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+}
+
+/*----------Navbar----------*/
+/*navbar*/
+.navbar-container{
+    position: sticky !important;
+    top: 0;
+    z-index: 1000; 
+}
+
+/*navbar background color*/
+.nb-background-color{   
+    background-color: #f4b8da;
+    z-index: 1000; /* Ensure navbar stays on top */
+    top: 0;
+    position: sticky !important;
+}
+
+/*links in navbar*/
+.nav-list-item a{
+    color: #ffffff !important;
+    font-size: 22px;
+}
+
+/*hovering animation*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: transform 0.35s ease-out;
+}
+
+/*Scrolled*/
+.nb-background-color.scrolled .hover-underline-animation:after {
+    background-color: #ffffff;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+}
+
+.nb-background-color.scrolled .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+}
+
+/*logo*/
+.nav-image{
+    height: 60px;
+    width: auto;
+    margin-top: -10px; /* Moves the image 20px up */
+    padding-left: 15px;
+}
+
+/*navbar items*/
+.nav-item a{
+    font-family: "League Spartan", sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+    color: #a5515e;
+}
+
+.nav-item:hover a{
+    font-family: "League Spartan", sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+    color: #a5515e;
+}
+
+.nb-background-color.scrolled .nav-item a{
+    font-family: "League Spartan", sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+    color: white;
+}
+
+/*navbar menu button*/
+.nav-item button{
+    font-family: "League Spartan", sans-serif;
+    font-size: 25px;
+}
+
+/*hamburger*/
+button.navbar-toggler {
+    background-color: #f4b8da
+}
+
+/*----------Footer----------*/
+.footer{
+    background-color: #f4b8da;   
+}
+
+/*button leading to top of page*/
+.footer-icon{
+    font-size: 40px;
+    color: #f07efb;
+}
+
+.footer-icon:hover{
+    color: #bc60c4;
+    transform: scale(1.15);
+    transition: 0.2;
+}
