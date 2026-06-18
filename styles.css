@@ -7,13 +7,20 @@ body{
     color: black;
     margin: 0;
     font-family: 'League Spartan', sans-serif;
-    text-align: center;
+    /* text-align: center; */
 }
 
+p {
+    font-size: 23px;
+}
+
+.space{
+    margin-top: 10px;
+}
 /*----------Navbar----------*/
 /*navbar*/
 .navbar-container{
-    position: sticky !important;
+    /* position: sticky !important; */
     top: 0;
     z-index: 1000; 
 }
@@ -23,7 +30,7 @@ body{
     background-color: #f4b8da;
     z-index: 1000; /* Ensure navbar stays on top */
     top: 0;
-    position: sticky !important;
+    /* position: sticky !important; */
 }
 
 /*links in navbar*/
@@ -140,9 +147,46 @@ button.navbar-toggler {
 }
 
 .image-text h1{
-    font-size: 75px;
+    font-size: 90px;
 }
 
 .image-text h3{
     font-size: 30px;
+}
+
+.feminism-text h1{
+    font-size: 60px;
+}
+
+.background{
+    /* width: 700px;
+    min-height: 420px; */
+    width: 100%;
+    max-width: 550px;
+    min-height: 350px;
+    
+    background: #dca1a1;
+    border-radius: 25px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-size{
+    object-fit: cover;
+    object-position: top center;
+    height: 100%;
+    width: 100%;
+}
+
+.overview-text{
+    padding-left: 30px;
+}
+
+.overview-text-sports{
+    padding-left: 30px;
+    padding-right: 20px;
 }
