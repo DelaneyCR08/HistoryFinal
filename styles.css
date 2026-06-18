@@ -120,3 +120,29 @@ button.navbar-toggler {
     transform: scale(1.15);
     transition: 0.2;
 }
+
+/*----------Home Page----------*/
+.image-background{
+    height: calc(100vh - 80px);
+    background-image: url("img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+}
+
+.image-text{
+    color: white;
+    text-align: center;
+}
+
+.image-text h1{
+    font-size: 75px;
+}
+
+.image-text h3{
+    font-size: 30px;
+}
