@@ -190,3 +190,160 @@ button.navbar-toggler {
     padding-left: 30px;
     padding-right: 20px;
 }
+
+/* ---------------- Timeline Section ---------------- */
+
+.timeline-section{
+    padding: 50px 20px;
+}
+
+.timeline-title{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+/* ---------------- Main Timeline ---------------- */
+
+.main-timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Center line */
+
+.main-timeline::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px dashed #999;
+}
+
+/* ---------------- Timeline Item ---------------- */
+
+.timeline-item{
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+}
+
+.left{
+    left: 0;
+}
+
+.right{
+    left: 50%;
+}
+
+/* Circle */
+
+.timeline-item::after{
+    content: "";
+    position: absolute;
+    top: 35px;
+    width: 20px;
+    height: 20px;
+    background: #999;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.left::after{
+    right: -10px;
+}
+
+.right::after{
+    left: -10px;
+}
+
+/* ---------------- Card ---------------- */
+
+.timeline-card{
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,.15);
+
+    opacity: 0;
+    scale: .8;
+
+    animation: fadeIn linear forwards;
+    animation-timeline: view();
+    animation-range: entry 100px cover 40%;
+}
+
+.left .timeline-card{
+    transform-origin: left;
+}
+
+.right .timeline-card{
+    transform-origin: right;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* ---------------- Image ---------------- */
+
+.timeline-image{
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    filter: saturate(40%);
+    transition: .4s;
+}
+
+.timeline-card:hover .timeline-image{
+    filter: saturate(100%);
+    transform: scale(1.08);
+}
+
+/* ---------------- Accordion ---------------- */
+
+.accordion-item{
+    border: none;
+}
+
+.accordion-button{
+    background: #efefef;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed){
+    background: #f4b8da;
+    color: white;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media (max-width: 768px){
+
+    .main-timeline::after{
+        left: 20px;
+    }
+
+    .timeline-item{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+
+    .right{
+        left: 0;
+    }
+
+    .left::after,
+    .right::after{
+        left: 10px;
+    }
+}
