@@ -32,25 +32,79 @@
             <!--collapsible navbar menu w/custom hover underline CSS animation-->
             <div class="collapse navbar-collapse" id="navmenu">
                 <!--links to hamburger menu button-->
-                <ul class="navbar-nav ms-auto text-center" id="nav-links">
-                    <li class="nav-list-item">
-                        <a href="1940's.html" class="nav-link hover-underline-animation nbMenuItem">1940's</a>
+                <ul class="navbar-nav ms-auto text-center">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                        href="#"
+                        id="yearsDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                            1940's
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="1940s.html">Overview</a></li>
+                            <li><a class="dropdown-item" href="1940s.html">Artifact 1</a></li>  <!--CHANGE LINK-->
+                            <li><a class="dropdown-item" href="1940s.html">Artifact 2</a></li>  <!--CHANGE LINK-->
+                        </ul>
                     </li>
-                    <li class="nav-list-item">
-                        <a href="1950's.html" class="nav-link hover-underline-animation nbMenuItem">1950's</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                        href="#"
+                        id="yearsDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                            1950's
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="1950s.html">Overview</a></li>
+                            <li><a class="dropdown-item" href="1950s.html">Artifact 1</a></li>  <!--CHANGE LINK-->
+                            <li><a class="dropdown-item" href="1950s.html">Artifact 2</a></li>  <!--CHANGE LINK-->
+                        </ul>
                     </li>
-                    <li class="nav-list-item">
-                        <a href="1960's.html" class="nav-link hover-underline-animation nbMenuIteme">1960's</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                        href="#"
+                        id="yearsDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                            1960's
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="1960s.html">Overview</a></li>
+                            <li><a class="dropdown-item" href="1960s.html">Artifact 1</a></li>  <!--CHANGE LINK-->
+                            <li><a class="dropdown-item" href="1960s.html">Artifact 2</a></li>  <!--CHANGE LINK-->
+                        </ul>
                     </li>
-                    <li class="nav-list-item">
-                        <a href="1970's.html" class="nav-link hover-underline-animation nbMenuItem">1970's+</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                        href="#"
+                        id="yearsDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                            1970's+
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="1970s.html">Overview</a></li>
+                            <li><a class="dropdown-item" href="1970s.html">Artifact 1</a></li>  <!--CHANGE LINK-->
+                            <li><a class="dropdown-item" href="1970s.html">Artifact 2</a></li>  <!--CHANGE LINK-->
+                        </ul>
                     </li>
-                    <li class="nav-list-item">
-                        <a href="resources.html" class="nav-link hover-underline-animation nbMenuItem">Resources</a>
+
+                    <li class="nav-item">
+                        <a href="resources.html" class="nav-link">Resources</a>
                     </li>
-                    <!-- <li class="nav-list-item">
-                        <button type = "button" class="nav-link-page nav-btn-reset" id="sign-inout-button" href="">SIGN OUT</button>
-                    </li> -->
+
                 </ul>
             </div>
         </div>
@@ -126,26 +180,28 @@
 
         <h1 class="timeline-title">Timeline</h1>
 
+        <!--1940's TIMELINE-->
+        <h1 class="text-center spacing">1940's</h3>
+        <br><br>
         <div class="main-timeline">
-
-            <!-- 1940s -->
+            <!-- Event 1 -->
             <div class="timeline-item left">
                 <div class="timeline-card">
-                    <div class="timeline-image" style="background-image:url('img/1940s.jpg');"></div>
-
+                    <div class="timeline-image" style="background-image:url('img/1940/PattyBerg’sTrophy.png');"></div>
                     <div class="accordion" id="timeline1">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button"
+                                <button class="accordion-button collapsed" 
+                                        type="button"
                                         data-bs-toggle="collapse"
                                         data-bs-target="#year1940">
-                                    1940's
+                                    Patty Berg’s Trophy
                                 </button>
                             </h2>
 
-                            <div id="year1940" class="accordion-collapse collapse show">
+                            <div id="year1940" class="accordion-collapse collapse">
                                 <div class="accordion-body">
-                                    Description of the 1940s event goes here.
+                                    Brief description
                                 </div>
                             </div>
                         </div>
@@ -154,7 +210,7 @@
                 </div>
             </div>
 
-            <!-- 1950s -->
+            <!-- Event 2 -->
             <div class="timeline-item right">
                 <div class="timeline-card">
                     <div class="timeline-image" style="background-image:url('img/1950s.jpg');"></div>
@@ -166,7 +222,7 @@
                                         type="button"
                                         data-bs-toggle="collapse"
                                         data-bs-target="#year1950">
-                                    1950's
+                                    Another event in 1940
                                 </button>
                             </h2>
 
@@ -181,7 +237,7 @@
                 </div>
             </div>
 
-            <!-- 1960s -->
+            <!-- Event 3 -->
             <div class="timeline-item left">
                 <div class="timeline-card">
                     <div class="timeline-image" style="background-image:url('img/1960s.jpg');"></div>
@@ -193,7 +249,7 @@
                                         type="button"
                                         data-bs-toggle="collapse"
                                         data-bs-target="#year1960">
-                                    1960's
+                                    Another event in 1940
                                 </button>
                             </h2>
 
@@ -208,7 +264,7 @@
                 </div>
             </div>
 
-            <!-- 1970s -->
+            <!-- Event 4 -->
             <div class="timeline-item right">
                 <div class="timeline-card">
                     <div class="timeline-image" style="background-image:url('img/1970s.jpg');"></div>
@@ -220,7 +276,348 @@
                                         type="button"
                                         data-bs-toggle="collapse"
                                         data-bs-target="#year1970">
-                                    1970's+
+                                    Another event in 1940
+                                </button>
+                            </h2>
+
+                            <div id="year1970" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Description of the 1970s+ event goes here.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--1950's TIMELINE-->
+        <br><br>
+        <h1 class="text-center spacing">1950's</h3>
+        <br><br>
+        <div class="main-timeline">
+            <!-- Event 1 -->
+            <div class="timeline-item left">
+                <div class="timeline-card">
+                    <div class="timeline-image" style="background-image:url('img/1940/PattyBerg’sTrophy.png');"></div>
+                    <div class="accordion" id="timeline1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" 
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#year1940">
+                                    Patty Berg’s Trophy
+                                </button>
+                            </h2>
+
+                            <div id="year1940" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Brief description
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="timeline-item right">
+                <div class="timeline-card">
+                    <div class="timeline-image" style="background-image:url('img/1950s.jpg');"></div>
+
+                    <div class="accordion" id="timeline2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#year1950">
+                                    Another event in 1940
+                                </button>
+                            </h2>
+
+                            <div id="year1950" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Description of the 1950s event goes here.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="timeline-item left">
+                <div class="timeline-card">
+                    <div class="timeline-image" style="background-image:url('img/1960s.jpg');"></div>
+
+                    <div class="accordion" id="timeline3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#year1960">
+                                    Another event in 1940
+                                </button>
+                            </h2>
+
+                            <div id="year1960" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Description of the 1960s event goes here.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="timeline-item right">
+                <div class="timeline-card">
+                    <div class="timeline-image" style="background-image:url('img/1970s.jpg');"></div>
+
+                    <div class="accordion" id="timeline4">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#year1970">
+                                    Another event in 1940
+                                </button>
+                            </h2>
+
+                            <div id="year1970" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Description of the 1970s+ event goes here.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--1960's TIMELINE-->
+        <br><br>
+        <h1 class="text-center spacing">1960's</h3>
+        <br><br>
+        <div class="main-timeline">
+            <!-- Event 1 -->
+            <div class="timeline-item left">
+                <div class="timeline-card">
+                    <div class="timeline-image" style="background-image:url('img/1940/PattyBerg’sTrophy.png');"></div>
+                    <div class="accordion" id="timeline1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" 
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#year1940">
+                                    Patty Berg’s Trophy
+                                </button>
+                            </h2>
+
+                            <div id="year1940" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Brief description
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="timeline-item right">
+                <div class="timeline-card">
+                    <div class="timeline-image" style="background-image:url('img/1950s.jpg');"></div>
+
+                    <div class="accordion" id="timeline2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#year1950">
+                                    Another event in 1940
+                                </button>
+                            </h2>
+
+                            <div id="year1950" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Description of the 1950s event goes here.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="timeline-item left">
+                <div class="timeline-card">
+                    <div class="timeline-image" style="background-image:url('img/1960s.jpg');"></div>
+
+                    <div class="accordion" id="timeline3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#year1960">
+                                    Another event in 1940
+                                </button>
+                            </h2>
+
+                            <div id="year1960" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Description of the 1960s event goes here.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="timeline-item right">
+                <div class="timeline-card">
+                    <div class="timeline-image" style="background-image:url('img/1970s.jpg');"></div>
+
+                    <div class="accordion" id="timeline4">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#year1970">
+                                    Another event in 1940
+                                </button>
+                            </h2>
+
+                            <div id="year1970" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Description of the 1970s+ event goes here.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--1970's TIMELINE-->
+        <br><br>
+        <h1 class="text-center spacing">1970's +</h3>
+        <br><br>
+        <div class="main-timeline">
+            <!-- Event 1 -->
+            <div class="timeline-item left">
+                <div class="timeline-card">
+                    <div class="timeline-image" style="background-image:url('img/1940/PattyBerg’sTrophy.png');"></div>
+                    <div class="accordion" id="timeline1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" 
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#year1940">
+                                    Patty Berg’s Trophy
+                                </button>
+                            </h2>
+
+                            <div id="year1940" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Brief description
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="timeline-item right">
+                <div class="timeline-card">
+                    <div class="timeline-image" style="background-image:url('img/1950s.jpg');"></div>
+
+                    <div class="accordion" id="timeline2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#year1950">
+                                    Another event in 1940
+                                </button>
+                            </h2>
+
+                            <div id="year1950" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Description of the 1950s event goes here.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="timeline-item left">
+                <div class="timeline-card">
+                    <div class="timeline-image" style="background-image:url('img/1960s.jpg');"></div>
+
+                    <div class="accordion" id="timeline3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#year1960">
+                                    Another event in 1940
+                                </button>
+                            </h2>
+
+                            <div id="year1960" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Description of the 1960s event goes here.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="timeline-item right">
+                <div class="timeline-card">
+                    <div class="timeline-image" style="background-image:url('img/1970s.jpg');"></div>
+
+                    <div class="accordion" id="timeline4">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#year1970">
+                                    Another event in 1940
                                 </button>
                             </h2>
 

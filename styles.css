@@ -111,9 +111,45 @@ button.navbar-toggler {
     background-color: #f4b8da
 }
 
+/* Desktop only */
+@media (min-width: 1200px) {
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease,
+            visibility 0.3s ease;
+    }
+
+    .dropdown-toggle::after {
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown:hover .dropdown-toggle::after {
+        transform: rotate(180deg);
+    }
+}
+
 /*----------Footer----------*/
 .footer{
     background-color: #f4b8da;   
+}
+
+.footer p{
+    color: #a5515e;
+    font-size: 30px;
 }
 
 /*button leading to top of page*/
@@ -291,7 +327,7 @@ button.navbar-toggler {
 /* ---------------- Image ---------------- */
 
 .timeline-image{
-    height: 220px;
+    height: 320px;
     background-position: center;
     background-size: cover;
     filter: saturate(40%);
