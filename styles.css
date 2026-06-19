@@ -33,10 +33,31 @@ p {
     /* position: sticky !important; */
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*links in navbar*/
 .nav-list-item a{
     color: #ffffff !important;
-    font-size: 22px;
+    font-size: 25px;
+
+    transition:
+        text-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.nav-list-item a:hover{
+    text-shadow:
+        0 0 0.5px currentColor,
+        0 0 0.5px currentColor;
+
+    transform: scale(1.1);
 }
 
 /*hovering animation*/
@@ -93,13 +114,6 @@ p {
     color: #a5515e;
 }
 
-.nb-background-color.scrolled .nav-item a{
-    font-family: "League Spartan", sans-serif;
-    font-size: 25px;
-    margin-right: 20px;
-    color: white;
-}
-
 /*navbar menu button*/
 .nav-item button{
     font-family: "League Spartan", sans-serif;
@@ -109,37 +123,6 @@ p {
 /*hamburger*/
 button.navbar-toggler {
     background-color: #f4b8da
-}
-
-/* Desktop only */
-@media (min-width: 1200px) {
-
-    .dropdown:hover .dropdown-menu {
-        display: block;
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-
-    .dropdown-menu {
-        display: block;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-10px);
-
-        transition:
-            opacity 0.3s ease,
-            transform 0.3s ease,
-            visibility 0.3s ease;
-    }
-
-    .dropdown-toggle::after {
-        transition: transform 0.3s ease;
-    }
-
-    .dropdown:hover .dropdown-toggle::after {
-        transform: rotate(180deg);
-    }
 }
 
 /*----------Footer----------*/
