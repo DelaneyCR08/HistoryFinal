@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feminism in Sports</title>
+    <title>Feminism in Sports - 1940's</title>
+    <link rel="icon" type="image/png" href="img/feminist.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
                rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
                crossorigin="anonymous">
@@ -15,6 +16,8 @@
                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
                
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
 
@@ -104,7 +107,7 @@
     <div class="modal fade"
         id="artifact1Modal"
         tabindex="-1">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
                     <h2 class="modal-title">
@@ -154,61 +157,15 @@
         </div>
     </div>
 
-    <!-- <section class="welcome-1940">
-        <div class="overview-1940">
-
-        </div>
-
-        <div class="artifacts-1940">
-            <div id="carousel">
-
-                <div class="hideLeft">
-                    <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
-                </div>
-
-                <div class="prevLeftSecond">
-                    <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
-                </div>
-
-                <div class="prev">
-                    <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
-                </div>
-
-                <div class="selected">
-                    <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
-                </div>
-
-                <div class="next">
-                    <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
-                </div>
-
-                <div class="nextRightSecond">
-                    <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
-                </div>
-
-                <div class="hideRight">
-                    <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
-                </div>
-
-            </div>
-
-            <div class="buttons">
-                <button id="prev">Prev</button>
-                <button id="next">Next</button>
-            </div>
-
-        </div>
-    </section> -->
-
     <section class="timeline">
         <br><br>
-        <!--1940's TIMELINE-->
-        <h1 class="text-center spacing">1940's Timeline</h3>
+       <!--1940's TIMELINE-->
+        <h1 class="text-center spacing">1940's</h3>
         <br><br>
         <div class="main-timeline">
             <!-- Event 1 -->
             <div class="timeline-item left">
-                <div class="timeline-card">
+                <div class="timeline-card" data-aos="fade-right" data-aos-duration="1000">
                     <div class="timeline-image" style="background-image:url('img/1940/PattyBerg’sTrophy.png');"></div>
                     <div class="accordion" id="timeline1">
                         <div class="accordion-item">
@@ -234,7 +191,7 @@
 
             <!-- Event 2 -->
             <div class="timeline-item right">
-                <div class="timeline-card">
+                <div class="timeline-card" data-aos="fade-left" data-aos-duration="1000">
                     <div class="timeline-image" style="background-image:url('img/1950s.jpg');"></div>
 
                     <div class="accordion" id="timeline2">
@@ -261,7 +218,7 @@
 
             <!-- Event 3 -->
             <div class="timeline-item left">
-                <div class="timeline-card">
+                <div class="timeline-card" data-aos="fade-right" data-aos-duration="1000">
                     <div class="timeline-image" style="background-image:url('img/1960s.jpg');"></div>
 
                     <div class="accordion" id="timeline3">
@@ -288,7 +245,7 @@
 
             <!-- Event 4 -->
             <div class="timeline-item right">
-                <div class="timeline-card">
+                <div class="timeline-card" data-aos="fade-left" data-aos-duration="1000">
                     <div class="timeline-image" style="background-image:url('img/1970s.jpg');"></div>
 
                     <div class="accordion" id="timeline4">
@@ -328,5 +285,10 @@
             </a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init()
+    </script>
 </body>
 </html>
