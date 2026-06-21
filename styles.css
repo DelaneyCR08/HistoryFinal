@@ -419,8 +419,17 @@ button.navbar-toggler {
     height: 320px;
 
     object-fit: cover;
+    object-position: center 0%;
 
     transition: transform .4s ease;
+}
+
+.billie-img {
+    width: 80%;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 .artifact-card:hover img{
