@@ -230,7 +230,7 @@ button.navbar-toggler {
     margin: auto;
 }
 
-/* Center line */
+/* Center Line */
 
 .main-timeline::after{
     content: "";
@@ -257,7 +257,7 @@ button.navbar-toggler {
     left: 50%;
 }
 
-/* Circle */
+/* Timeline Dots */
 
 .timeline-item::after{
     content: "";
@@ -281,66 +281,20 @@ button.navbar-toggler {
 /* ---------------- Card ---------------- */
 
 .timeline-card{
-    overflow: hidden;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0,0,0,.15);
-/* 
-    opacity: 0;
-    scale: .8;
-
-    animation: fadeIn linear forwards;
-    animation-timeline: view();
-    animation-range: entry 100px cover 40%; */
 }
 
-.left .timeline-card{
-    transform-origin: left;
+.timeline-card h3{
+    margin-bottom: 10px;
+    font-size: 1.8rem;
 }
 
-.right .timeline-card{
-    transform-origin: right;
-}
-
-@keyframes fadeIn{
-    to{
-        opacity: 1;
-        scale: 1;
-    }
-}
-
-/* ---------------- Image ---------------- */
-
-.timeline-image{
-    height: 320px;
-    background-position: center;
-    background-size: cover;
-    filter: saturate(40%);
-    transition: .4s;
-}
-
-.timeline-card:hover .timeline-image{
-    filter: saturate(100%);
-    transform: scale(1.08);
-}
-
-/* ---------------- Accordion ---------------- */
-
-.accordion-item{
-    border: none;
-}
-
-.accordion-button{
-    background: #efefef;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.accordion-button:not(.collapsed){
-    background: #f4b8da;
-    color: white;
-}
-
-.accordion-button:focus{
-    box-shadow: none;
+.timeline-card p{
+    margin: 0;
+    line-height: 1.5;
 }
 
 /* ---------------- Mobile ---------------- */
@@ -366,7 +320,6 @@ button.navbar-toggler {
         left: 10px;
     }
 }
-
 /*--Carousel--*/
 
 .artifact-section{
