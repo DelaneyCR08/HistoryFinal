@@ -148,17 +148,6 @@ button.navbar-toggler {
 }
 
 /*----------Home Page----------*/
-.image-background{
-    height: calc(100vh - 80px);
-    background-image: url("img/background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
-}
 
 .image-text{
     color: white;
@@ -418,11 +407,60 @@ button.navbar-toggler {
 
 /*Top of years page*/
 
+.image-background{
+    height: calc(100vh - 80px);
+    background-image: url("img/image-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+}
+
 .image-background-1940{
     height: calc(100vh - 80px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),
-                    rgba(0, 0, 0, 0.5)),
-                    url("img/1940/basketball1940.png");
+    background-image: url("img/image-background-1940.png");
+    background-size: cover;
+    background-position: center 0%;
+    background-repeat: no-repeat;
+    
+
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+}
+
+.image-background-1950{
+    height: calc(100vh - 80px);
+    background-image: url("img/image-background-1950.png");
+    background-size: cover;
+    background-position: center 0%;
+    background-repeat: no-repeat;
+    
+
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+}
+
+.image-background-1960{
+    height: calc(100vh - 80px);
+    background-image: url("img/image-background-1960.png");
+    background-size: cover;
+    background-position: center 0%;
+    background-repeat: no-repeat;
+    
+
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+}
+
+.image-background-1970{
+    height: calc(100vh - 80px);
+    background-image: url("img/image-background-1970.png");
     background-size: cover;
     background-position: center 0%;
     background-repeat: no-repeat;
