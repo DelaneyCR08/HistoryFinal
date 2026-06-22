@@ -470,3 +470,30 @@ button.navbar-toggler {
     justify-content: center; /* Centers horizontally */
     align-items: center;     /* Centers vertically */
 }
+
+/*-----Resouces----*/
+.resource-card{
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.artifact-section{
+    padding: 30px;
+}
+
+.artifact-section:first-child{
+    border-bottom: 2px solid #eee;
+}
+
+.artifact-section h3{
+    color: #c75b6c;
+    margin-bottom: 15px;
+}
+
+.artifact-section p{
+    margin: 0;
+    line-height: 1.7;
+}
