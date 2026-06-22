@@ -432,6 +432,8 @@ button.navbar-toggler {
     margin: 0 auto;
 }
 
+
+
 .artifact-card:hover img{
     transform: scale(1.08);
 }
